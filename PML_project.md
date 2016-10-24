@@ -119,7 +119,7 @@ predCART <- predict(model_cart, newdata=testing)
 cmCART <- confusionMatrix(predCART, testing$classe)
 plot(predCART)
 ```
-(fig01.png)
+![Working with Decision trees with CART](fig01.png)
 
 **Working with Stochastic gradient boosting trees (gbm)**
 
@@ -128,7 +128,7 @@ predGBM <- predict(model_gbm, newdata=testing)
 cmGBM <- confusionMatrix(predGBM, testing$classe)
 plot(predGBM)
 ```
-(fig02.png)
+![Working with Stochastic gradient boosting trees](fig02.png)
 
 **Working with Random forest decision trees (rf)**
 
@@ -137,7 +137,7 @@ predRF <- predict(model_rf, newdata=testing)
 cmRF <- confusionMatrix(predRF, testing$classe)
 plot(predRF)
 ```
-(fig03.png)
+![Working with Random forest decision trees](fig03.png)
 
 **Calculating Accuracy.**
 
@@ -181,7 +181,7 @@ print(featureDF[1:5,])
 ```
 featurePlot(x=training[, featureDF$FeatureName[1:5]], y=training$classe, plot='pairs')
 ```
-(fig04.png)
+![Feature Plot](fig04.png)
 
 ##Prediction
 
